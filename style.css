@@ -1,0 +1,136 @@
+/* 全体の設定 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    /* 横に突き出さないようにガード */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* ヘッダー */
+header {
+    background-color: #ff5a00;
+    width: 100%; /* vwより%の方が安全なときがあるよ */
+    height: 80px;
+    padding: 10px; /* 上下左右10px */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 24px; /* ヘッダーの高さ(50px)からpaddingを引いた分に収める */
+}
+
+/* ヒーロー画像 */
+.hero-img {
+    width: 100%;
+    max-height: 400px; /* デカすぎ防止！お好みで調整してね */
+    object-fit: cover; /* 縦横比を保っていい感じに切り抜き */
+    display: block;
+}
+
+/* コンテナ共通 */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* NEWS セクション */
+.news-title {
+    color: #ff5a00;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news-board {
+    background-color: #dfcdc4;
+    border-radius: 32px;
+    padding: 15px;
+}
+
+.news-item {
+    display: flex;
+    /* align-items: center から stretch に変更して中身の高さを揃える */
+    align-items: stretch; 
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.news-item:last-child {
+    margin-bottom: 0;
+}
+
+.news-img {
+    width: 80px; /* スマホならこれくらいが可愛いかも */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.news-text-box {
+    background-color: #ede0d1;
+    border-radius: 20px;
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.youtube-area {
+    width: 90%;
+    margin: 30px auto; /* これでarea自体は画面の真ん中 */
+    
+    /* 中のプレイヤーを中央に寄せるための設定を追加 */
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    /* プレイヤーの最大幅を決める（お好みで調整してね） */
+    width: 100%;
+    max-width: 560px; /* 一般的なYouTubeサイズ。スマホなら100%でもOK */
+    
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 の比率 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    background-color: #dfcdc4; /* news-boardと同じ色！ */
+    text-align: center;
+    padding: 40px 0 0; /* 下の余白はbanner画像があるから0でOK */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    /* ロゴの背景が透明じゃない場合はここもチェックしてね */
+}
+
+.footer-banner {
+    width: 100%;
+    height: auto;
+    display: block; /* 下に隙間ができないように */
+}
