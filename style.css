@@ -42,7 +42,7 @@ header {
 /* NEWS セクション */
 .news-title {
     color: #ff5a00;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
@@ -133,4 +133,31 @@ footer {
     width: 100%;
     height: auto;
     display: block; /* 下に隙間ができないように */
+}
+
+.guest{
+    background: #ff5a00;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.title-guest{
+    color: white;
+}
+
+.guest-text{
+    text-align: center;
+    color: white;
+}
+
+.guest-text-below{
+    margin-top: 30px;
+}
+
+.crossword{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
