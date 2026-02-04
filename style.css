@@ -156,7 +156,7 @@ footer {
 }
 
 .crossword{
-    display: flex;
+    display: block;
     width: 80%;
     max-width: 300px;
     margin-left: auto;
