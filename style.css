@@ -155,10 +155,10 @@ footer {
     margin-top: 30px;
 }
 
-.crossword{
-    display: block;
-    width: 80%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+.crossword {
+    display: block !important;    /* 強制的にブロック要素にする */
+    width: 80% !important;        /* 何が何でも画面幅の80%にする */
+    max-width: 300px !important;  /* 絶対に300px以上にはさせない */
+    height: auto !important;      /* 縦横比を強制維持 */
+    margin: 20px auto !important; /* 上下に余白を作りつつ、左右中央寄せ */
 }
