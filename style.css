@@ -77,7 +77,10 @@ header {
 
 .news-text-box {
     background-color: #ede0d1;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+>>>>>>> 5959d78b8e596ebe86e3159ff969ccb473c0b8ab
     border-radius: 20px;
     padding: 12px;
     flex: 1;
@@ -156,6 +159,7 @@ footer {
     margin-top: 30px;
 }
 
+<<<<<<< HEAD
 /* ENTER オーバーレイ */
 #enter-overlay {
     position: fixed;
@@ -228,6 +232,11 @@ footer {
 .crossword {
     display: block !important;    /* 強制的にブロック要素にする */
     width: 50% !important;        /* 何が何でも画面幅の80%にする */
+=======
+.crossword {
+    display: block !important;    /* 強制的にブロック要素にする */
+    width: 80% !important;        /* 何が何でも画面幅の80%にする */
+>>>>>>> 5959d78b8e596ebe86e3159ff969ccb473c0b8ab
     max-width: 300px !important;  /* 絶対に300px以上にはさせない */
     height: auto !important;      /* 縦横比を強制維持 */
     margin: 20px auto !important; /* 上下に余白を作りつつ、左右中央寄せ */
